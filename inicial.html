@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Livros - Biblio</title>
+  <link rel="stylesheet" href="inicial.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Biblio</h1>
+      </div>
+      <div class="nav-buttons">
+        <button class="btn-cadastrar" onclick="window.location.href='cadastro.html'">Cadastrar</button>
+        <button class="btn-login" onclick="window.location.href='login.html'">Login</button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="conteudo-principal">
+    <section class="busca-livros">
+      <h2>Buscar Livros</h2>
+      <div class="campo-busca">
+        <input type="text" id="busca" placeholder="Digite o título do livro" />
+        <button onclick="buscarLivro()">Buscar</button>
+      </div>
+      <ul id="resultado"></ul>
+    </section>
+  </main>
+
+  <script src="inicial.js"></script>
+</body>
+</html>

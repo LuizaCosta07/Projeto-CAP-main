@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro de Usuário</title>
+  <link rel="stylesheet" href="cadastro.css" />
+</head>
+<body>
+  <div class="container" role="region" aria-label="Cadastro de Usuário">
+    <h2>Criar Conta</h2>
+    <form id="formCadastro" novalidate>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required />
+
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" placeholder="Mínimo 6 caracteres" required />
+
+      <label for="confirmarSenha">Confirmar Senha</label>
+      <input type="password" id="confirmarSenha" name="confirmarSenha" placeholder="Repita sua senha" required />
+
+      <div id="errorMessage" class="error-message" aria-live="polite"></div>
+
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <p class="login-link">
+      Já tem conta? <a href="login.html">Entrar</a>
+    </p>
+  </div>
+
+  <script src="cadastro.js"></script>
+</body>
+</html>

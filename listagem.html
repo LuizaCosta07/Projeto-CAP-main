@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Listagem de Usuários</title>
+  <link rel="stylesheet" href="listagem.css" />
+</head>
+<body>
+  <div class="container" role="region" aria-label="Listagem de Usuários">
+    <h2>Usuários Cadastrados</h2>
+    <input
+      type="text"
+      id="searchInput"
+      placeholder="Buscar por nome..."
+      aria-label="Buscar por nome"
+    />
+    <table aria-live="polite" aria-describedby="message" role="table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Senha</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody">
+      </tbody>
+    </table>
+    <div id="message" aria-live="polite"></div>
+  </div>
+
+  <script src="listagem.js"></script>
+</body>
+</html>

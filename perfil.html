@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Perfil do Usuário</title>
+<link rel="stylesheet" href="perfil.css" />
+</head>
+<body>
+  <div class="container" role="region" aria-label="Perfil do Usuário">
+    <h2>Perfil do Usuário</h2>
+    <form id="perfilForm" novalidate>
+      <div class="profile-field">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required autocomplete="name" />
+      </div>
+      <div class="profile-field">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+      </div>
+      <div class="profile-field">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required autocomplete="new-password" placeholder="Mínimo 6 caracteres, letras e números" />
+      </div>
+      <div class="buttons">
+        <button type="submit">Salvar</button>
+        <button type="button" id="logoutBtn">Sair</button>
+        <button type="button" id="listagemBtn" onclick="window.location.href='listagem.html'">Listar</button>
+      </div>
+      <div id="message" aria-live="polite"></div>
+    </form>
+  </div>
+
+  <script src="perfil.js"></script>
+</body>
+</html>
