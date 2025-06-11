@@ -51,7 +51,7 @@ form.addEventListener('submit', e => {
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
     console.log('Usuário cadastrado com sucesso:', { nome, email });
     alert('Cadastro realizado com sucesso!');
-    window.location.href = 'perfil.html';
+    window.location.href = 'login.html';
   } catch (err) {
     console.error('Erro ao salvar usuário no localStorage:', err);
     errorMessage.textContent = 'Erro ao salvar usuário. Tente novamente.';
