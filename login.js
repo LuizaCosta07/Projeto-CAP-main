@@ -25,5 +25,5 @@ form.addEventListener('submit', e => {
   }
 
   localStorage.setItem('usuarioLogado', JSON.stringify(usuarioEncontrado));
-  window.location.href = 'inicial.html';
+  window.location.href = 'perfil.html';
 });
